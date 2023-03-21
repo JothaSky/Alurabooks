@@ -8,11 +8,21 @@
     --laranja: #EB9B00;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "poppins";
+    --azul:#002F52;
 }
 body{
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font-size: 19px;
     font-weight: 400;
+}
+
+.botoes__ancora{
+    background-color: var(--laranja);
+    padding: 1em 1.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
     
+
 }
