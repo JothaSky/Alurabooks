@@ -27,9 +27,7 @@
 }
 .contato__email ::placeholder{
     font-family: var(--fonte-principal);
-    background: url("../img/envelope.svg") no-repeat;
-    padding-left: 2em;
-    
-
-
+    color: var(--azul);
+    background: url("img/envelope.svg") no-repeat;
+    padding-left: 1em;
 }
