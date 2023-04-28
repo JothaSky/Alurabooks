@@ -119,3 +119,13 @@
     
     }
 } 
+
+@media screen and (min_width: 1920px) {
+
+    .container__link {
+
+        display: flex;
+        align-items: center;
+
+    }
+}
