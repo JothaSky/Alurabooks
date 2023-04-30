@@ -29,14 +29,18 @@
     font-weight: 700;
 }
 
-@media screen and (min-witth 124px){
-
-    .tópicos__titulo{
-        font-size: 24px;
-
-    }
-    .tópicos__link{
+@media screen and (min-width: 1024px) {
+    .tópicos__titulo {
         font-size: 24px;
     }
 
+    .tópicos__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .tópicos {
+        padding: 3em 30vw;
+    }
 }

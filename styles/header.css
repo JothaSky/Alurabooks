@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .cabeçalho {
     background-color: var(--branco);
     display: flex;
@@ -52,7 +60,6 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .container__botao {
@@ -61,16 +68,15 @@
 
 .container__titulo {
     display: none;
-
 }
 
-.opçoes {
-    display: none;
-}
-.container__texto{
+.opções {
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -83,68 +89,80 @@
     .container__titulo {
         font-weight: 400;
         display: block;
-
     }
 
     .container__titulo--negrito {
         font-weight: 700;
     }
 
-    .opçoes {
+    .opções {
         display: flex;
     }
 
-    .opçoes__item {
+    .opções__item {
         padding: 0 1em;
         text-transform: uppercase;
     }
 
-    .opçoes__link {
+    .opções__link {
         text-decoration: none;
         color: var(--preto);
-
     }
 
-    .container__imagem-tranparente {
+    .container__imagem-transparente {
         display: none;
-
     }
 
     .cabeçalho__menu-hamburguer {
         display: none;
     }
-    .opçoes__botao:checked ~ .lista-menu{
+
+    .opções__botão:checked~.lista-menu {
         display: block;
         width: auto;
     }
-    .opçoes__botao{
-    display: none;
 
-    
+    .opções__botão {
+        display: none;
     }
-} 
+
+    .opções__botão:checked~.opções__rotulo>.opções__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opções__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+}
 
 @media screen and (min-width: 1728px) {
-
     .container__link {
-
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: var(--azul-degrade);
+        color: var(--preto);
     }
 
-    .cabeçalho{
-        
+    .cabeçalho {
         padding: 0 2em;
     }
-    .opçoes{
+
+    .opções {
         margin-right: auto;
-        
     }
-    .container__texto{
 
+    .container__texto {
         display: block;
-
     }
 }
