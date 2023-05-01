@@ -10,6 +10,9 @@ hr {
 .lista-rodapé {
     display: none;
 }
+.lista-rodapé__link:hover {
+    color: var(--laranja);
+    }
 
 @media screen and (min-width: 1024px) {
     .rodapé {
